@@ -1,0 +1,112 @@
+NAGA SAI RAKSHITH B S
+CAPG48LSRB346
+
+1) What is difference in Over-loading and Over-riding?
+=> When two or more methods in the same class have the same name but different parameters, it's called Overloading. 
+=> When the method signature (name and parameters) are the same in the superclass and the child class, it's called Overriding.
+
+2) If both the functions are statis can we over-ride?
+=>Static methods are bonded at compile time using static binding. 
+=>Therefore, we cannot override static methods in Java
+
+3) Diffference between Final , Finally and Finalize
+=> Final is the keyword and access modifier which is used to apply restrictions on a class, method or variable.
+=> Finally is the block in Java Exception Handling to execute the important code whether the exception occurs or not.
+=> Finalize is the method in Java which is used to perform clean up processing just before object is garbage collected.
+
+4) What are marker Interfaces?
+=> A marker interface is an interface that has no methods or constants inside it.
+=>It is an empty interface.
+
+5) What is Singleton class?
+=> A singleton class is a class that can have only one object at a time.
+
+6) What is the underlying Data structure for Arraylist and Linkedlist?
+=> Both ArrayList and LinkedList are two different implementations of the List interface. 
+=> ArrayList is a resizable-array implementation of the List interface, 
+=> Whereas LinkedList is a Doubly-linked list implementation of the List interface.
+
+7) What is hash collision?
+=> A hash code collision in a HashMap, is a situation where two or more key objects produce the same final hash value and hence point to the same array index.
+
+8) What are lambda Expressions?
+=> A lambda expression is a short block of code which takes in parameters and returns a value. 
+=> Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
+
+9) Whats is functional interface?
+=> A functional interface is an interface that contains only one abstract method. 
+=> They can have only one functionality to exhibit.
+=> Lambda expressions can be used to represent the instance of a functional interface.
+
+10) What are optional classes in Java 8?
+=> Optional is a container object used to contain not-null objects.
+=> Optional object is used to represent null with absent value.
+=> This class has various utility methods to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.
+
+11) What is factory design pattern and Adapter and difference between them?
+~> Factory Design Pattern:
+  => A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. 
+  => Subclasses are responsible to create the instance of the class.
+
+~> Adapter Design Pattern:
+  => An Adapter pattern acts as a connector between two incompatible interfaces that otherwise cannot be connected directly. 
+  => An Adapter wraps an existing class with a new interface so that it becomes compatible with the client's interface.
+
+12) What are Solid principles?
+~> Solid principles:
+  => It establish practices that lend to developing software with considerations for maintaining and extending as the project grows. 
+  => Adopting these practices can also contribute to avoiding code smells, refactoring code, and Agile or Adaptive software development.
+  => It’s a mnemonic acronym for the following five design principles:
+    -> Single Responsibility Principle,
+    -> Open/Closed Principle,
+    -> Liskov Substitution Principle,
+    -> Interface Segregation Principle,
+    -> Dependency Inversion.
+
+13) What does @component and @scan do in Sprinboot annaotation?
+=> @Component is an annotation that allows Spring to automatically detect our custom beans. 
+=> In other words, without having to write any explicit code, Spring will Scan our application for classes annotated with @Component. 
+=> Instantiate them and inject any specified dependencies into them.
+
+=> With Spring, we use the @ComponentScan annotation along with the @Configuration annotation to specify the packages that we want to be scanned. 
+=> @ComponentScan without arguments tells Spring to scan the current package and all of its sub-packages
+
+14) Whats is the Diference between JPA , Hibernate and ORM?
+=> JPA -> Java Persistence API (JPA) defines the management of relational data in the Java applications. 
+=> Hibernate -> Hibernate is a tool which is used to save the state of Java object into the database. It is just a specification. Various ORM tools implement it for data persistence.
+=> ORM -> Object-Relational Mapping (ORM) is the process of converting Java objects to database tables. In other words, this allows us to interact with a relational database without any SQL.
+
+
+
+15) What is indexing in Database? 
+=> Indexing is a way to optimize the performance of a database by minimizing the number of disk accesses required when a query is processed. 
+=> It is a data structure technique which is used to quickly locate and access the data in a database.
+
+16) What are 4 types of Drivers in Jdbc?
+=> Type 1 -> JDBC-ODBC bridge.
+=> Type 2 -> partial Java driver.
+=> Type 3 -> pure Java driver for database middleware, pure Java driver for direct-to-database.
+=> Type 4 -> highly-functional drivers with superior performance.
+
+17) What is difrence between @component and @bean and @service?
+=> @component -> If any class is annotated with @Component it will be automatically detect by using classpath scan.
+=> @bean -> It is used to explicitly declare a single bean, rather than letting Spring do it automatically. 
+=> @Service -> It is a stereotype for the service layer.It annotates classes at the service layer.
+
+18) What is difference bew SOAP and restful services techinically?
+~>SOAP : 
+  => SOAP (Simple Object Access Protocol) is an XML-based protocol for accessing web services over HTTP. 
+  => It is developed as an intermediate language so that applications built in various programming languages can communicate with each other effectively. Web services use SOAP for exchange of XML data between applications. 
+  => SOAP supports both stateful and stateless operations. Stateful means that the server keeps the information that it receives from the client across multiple requests. These requests are chained together so that the server is aware about the previous requests. Examples are bank transactions, flight bookings, etc. 
+  => Stateless messaging has enough information about the state of the client so that the server does not have to bother.
+~> REST : 
+  =>REST (Representational State Transfer) is an architectural approach for communication purposes often used in various web services development. 
+  => It is a stateless client-server model. Web services that are defined on the concept of REST are RESTful web services. 
+  =>When a client makes a request via RESTful API, it transfers the representation of the state of the resources to the server. This information can be transferred in various formats via HTTP like, JSON, HTML, XLT, and Plain Text, but JSON is the most common language used due to its easy readability by machines and humans.
+
+19) Difference in POST and PUT.
+=> POST method is call when you have to add a child resource under resources collection.
+=> PUT method is call when you have to modify a single resource, which is already a part of resource collection.
+
+20) IS react uni directional or Bi directional?
+=> React, a Javascript library, uses unidirectional data flow.
